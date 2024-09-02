@@ -10,4 +10,4 @@ This project involves developing a person detector and tracking system specifica
 
 ## Setup
 1. Clone the repository or download the source code.
-2. Install the required dependencies using pip:
+2. Install the required dependencies using pip
