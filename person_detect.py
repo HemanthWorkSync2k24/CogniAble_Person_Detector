@@ -14,7 +14,7 @@ with open("coco.names", "r") as f:
     classes = [line.strip() for line in f.readlines()]
 
 # Initialize video capture
-cap = cv2.VideoCapture("video_20.mp4")
+cap = cv2.VideoCapture("video_20.mp4") #Sample video 
 
 # Print video properties
 print("Frame width: ", cap.get(cv2.CAP_PROP_FRAME_WIDTH))
@@ -29,7 +29,7 @@ frame_height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
 # Define the codec and create VideoWriter object
 fourcc = cv2.VideoWriter_fourcc(*'XVID')  # Try changing this to 'MJPG' if necessary
-out = cv2.VideoWriter('video_20op.avi', fourcc, fps, (frame_width, frame_height))
+out = cv2.VideoWriter('video_20op.avi', fourcc, fps, (frame_width, frame_height))  #Sample video output file name
 
 # Prepare a unique ID counter
 id_counter = 0
